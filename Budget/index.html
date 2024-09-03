@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏦 Orçamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="h1"> 💸 Gerador de Orçamento 💸 </h1>
+
+    <div id="borda">
+        
+        <div id="bordaDentro">
+            <div style="border: white solid 2px;"></div>
+            <h2>Preencha o Formulario</h2>
+            <div style="border: white solid 2px;"></div><br>
+            📉 CONTAS <br><br>
+            <label>Valor do Aluguel:</label><input id="inputAluguel" placeholder="Digite aqui mamasita :3" value="0.00">
+            <label>Conta de Luz:</label><input id="inputLuz" placeholder="Digite aqui mamasita :3" value="0.00">
+            <label>Conta de Água:</label><input id="inputAgua" placeholder="Digite aqui mamasita :3" value="0.00">
+            <label>Conta de Internet:</label><input id="inputInternet" placeholder="Digite aqui mamasita :3" value="0.00">
+            <label>Conta de Telefone:</label><input id="inputTelefone" placeholder="Digite aqui mamasita :3" value="0.00">
+            <label>Conta do Convênio Médico:</label><input id="inputMedico" placeholder="Digite aqui mamasita :3" value="0.00">
+            <label>Conta do Convênio Odontológico:</label><input id="inputDentista" placeholder="Digite aqui mamasita :3" value="0.00"><br>
+
+            <div style="border: white solid 2px;"></div><br>
+            
+            📈 GANHOS <br><br>
+            <label>Sálario desse mês:</label><input id="inputSalario" placeholder="Digite aqui mamasita :3" value="0.00">
+            <label>Pensão desse mês:</label><input id="inputPensao" placeholder="Digite aqui mamasita :3" value="0.00">
+            <label>Outras rendas desse mês (OPCIONAL): <label></label></label><input id="inputOutrosG" placeholder="Digite aqui mamasita :3" value="0.00"><br>
+            
+            <span style="border: white solid 2px;"></span><br>
+            <label id="finalLine" style="margin-bottom: 15px;"></label>
+            <div id="container">
+            </div>
+            <button onclick="addElements()">ADICIONAR CAMPO</button>
+            <button onclick="mkBudget()">SOMAR</button>
+            <!--<button onclick="addElement()">addElement</button>-->
+            
+        </div>
+
+        <div id="bordaDentro2">
+            <div style="border: white solid 2px;"></div>
+            <h2 align="center"> 💸 Orçamento Gerado ! 💸 </h2>
+            <div style="border: white solid 2px;"></div><br>
+            
+            📉 CONTAS <br><br>
+            <label id="Caluguel">Valor do Aluguel:..........R$ 0.00</label>
+            <label id="Cluz">Conta de Luz:.............R$ 0.00</label>
+            <label id="Cagua">Conta de Água:............R$ 0.00</label>
+            <label id="Cinternet">Conta de Internet:........R$ 0.00</label>
+            <label id="Ctelefone">Conta de Telefone:........R$ 0.00</label>
+            <label id="Cmedico">Convênio Médico:..........R$ 0.00</label>
+            <label id="Cdentista">Convênio Odontológico:....R$ 0.00</label>
+
+            <div style="border: white solid 2px;"></div><br>
+            📈 GANHOS <br><br>
+            <label id="Gsalario">Sálario:..................R$ 0.00</label>
+            <label id="Gpensao">Pensão:...................R$ 0.00</label>
+            <label id="Goutros">Outros:...................R$ 0.00</label><br>
+
+
+            <div style="border: white solid 2px;"></div><br>
+            <div>🔨 CAMPOS ADICIONADOS</div><br>
+            <div id="containerFinal"><label id="labelNenhum"></label></div><br>
+            <div style="border: white solid 2px;"></div><br>
+            💲 TOTAL <br><br>
+            <label id="totalGanhos">Total Ganhos:.............R$ 0.00</label>
+            <label id="totalContas">Total Contas:.............R$ 0.00</label>
+            <label id="totalAdicionado">Total Adicionados:.........R$ 0.00</label><br>
+            <div style="border: white solid 2px;"></div><br>
+            <label id="totalSobrando">Total Sobrando:.........R$ 0.00</label><br>
+            
+
+
+            
+            
+            <button onclick="reset()">VOLTAR</button>
+        </div>
+    </div>
+   
+    
+    <script src="index.js"></script>
+</body>
+</html>
